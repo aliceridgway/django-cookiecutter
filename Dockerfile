@@ -7,8 +7,6 @@ RUN adduser --disabled-password --no-create-home appuser
 
 WORKDIR /app
 
-ENV PATH="/app/.venv/bin:$PATH"
-
 COPY requirements.txt .
 
 RUN pip install --upgrade pip && pip install -r requirements.txt
