@@ -22,3 +22,5 @@ typing-extensions==4.13.2
     # via
     #   asgiref
     #   psycopg
+whitenoise==6.9.0
+    # via -r requirements.in
