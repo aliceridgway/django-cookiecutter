@@ -1,6 +1,8 @@
 services:
   web:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.development
     container_name: django-app
     ports:
       - 8000:8000

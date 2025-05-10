@@ -24,9 +24,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True if os.environ["ENVIRONMENT"] == "development" else False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    os.environ["PUBLIC_DOMAIN"]
+]
 
 
 # Application definition
