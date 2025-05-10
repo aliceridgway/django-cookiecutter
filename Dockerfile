@@ -17,6 +17,6 @@ RUN chown -R appuser /app
 
 USER appuser
 
-EXPOSE 8000
+EXPOSE 8080
 
 CMD ["gunicorn", "cookiecutter.wsgi"]
