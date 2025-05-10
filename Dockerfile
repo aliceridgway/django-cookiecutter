@@ -19,4 +19,4 @@ USER appuser
 
 EXPOSE 8080
 
-CMD ["gunicorn", "cookiecutter.wsgi"]
+CMD ["sh", "-c", "python manage.py migrate && python manage.py collectstatic --noinput && gunicorn cookiecutter.wsgi"]
