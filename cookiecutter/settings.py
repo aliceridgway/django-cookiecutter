@@ -55,7 +55,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-CSRF_TRUSTED_ORIGINS = ALLOWED_HOSTS
+CSRF_TRUSTED_ORIGINS = ["https://django-cookiecutter-production.up.railway.app"]
 
 ROOT_URLCONF = "cookiecutter.urls"
 
