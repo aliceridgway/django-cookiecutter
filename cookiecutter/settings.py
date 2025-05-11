@@ -55,6 +55,8 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+CSRF_TRUSTED_ORIGINS = ALLOWED_HOSTS
+
 ROOT_URLCONF = "cookiecutter.urls"
 
 TEMPLATES = [
